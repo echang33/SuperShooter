@@ -1,12 +1,10 @@
 Unity Textbook Homework for Ethan Chang
 
-To test, press play button.
-Chapter 1-2:
+Chapter 1-2: "Scenes/TestScene"
 * Physics simulations
 * "Enemy" prefab created
 
-Chapter 5: 
+Chapter 5-5: "Scenes/ShooterGame"
 * Scripts in "Script" folder under Assets
 
-Chapter 6:
-* PlayerMovement.cs script
+Followed all textbook steps, press play button to test.
