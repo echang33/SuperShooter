@@ -9,11 +9,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float rotationSpeed;
     private Vector2 movementValue;
     private float lookValue;
+    private Rigidbody rb;
 
     private void Awake()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        rb = GetComponent<Rigidbody>();
     }
     // Start is called before the first frame update
     void Start()
@@ -36,5 +39,9 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Translate(movementValue.x * Time.deltaTime, 0, movementValue.y * Time.deltaTime);
         transform.Rotate(0, lookValue * Time.deltaTime, 0);
+        //rb.AddRelativeForce(movementValue.x * Time.deltaTime, 0, movementValue.y * Time.deltaTime);
+        //rb.AddTorque(0, lookValue * Time.deltaTime, 0);
     }
+
+
 }
