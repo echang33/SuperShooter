@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a808374e434dcf4da53da1d1abc1e56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
   moveDirection: {x: 0, y: 0, z: 1}
   delay: 3
 --- !u!54 &-1546005862826812001

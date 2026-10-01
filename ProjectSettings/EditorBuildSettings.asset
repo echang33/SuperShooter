@@ -8,4 +8,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 33c725841f2b8394a9113980921145af
+  - enabled: 1
+    path: Assets/Scenes/ShooterGame.unity
+    guid: d4a4b091dcf6238418641028f3fa8873
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: ff683108f246f8548ad0aada93b08242
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 49ae382c77c076843a02eab854f0d917
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
