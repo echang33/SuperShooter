@@ -1415,6 +1415,16 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5706885918132376663, guid: 4c4612eb908dc5549a01f9eaf91d4a7b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706885918132376663, guid: 4c4612eb908dc5549a01f9eaf91d4a7b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.56
+      objectReference: {fileID: 0}
     - target: {fileID: 8558771331778072191, guid: 4c4612eb908dc5549a01f9eaf91d4a7b,
         type: 3}
       propertyPath: m_Height
