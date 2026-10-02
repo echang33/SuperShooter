@@ -70,13 +70,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8670395934053542600, guid: 6c58321d374a38946955c33d164913ce,
         type: 3}
-      propertyPath: moveDirection.x
+      propertyPath: delay
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8670395934053542600, guid: 6c58321d374a38946955c33d164913ce,
         type: 3}
-      propertyPath: moveDirection.z
+      propertyPath: moveDirection.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670395934053542600, guid: 6c58321d374a38946955c33d164913ce,
+        type: 3}
+      propertyPath: moveDirection.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
