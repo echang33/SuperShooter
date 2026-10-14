@@ -23,3 +23,7 @@ Chapter 7-9: Under "Scenes/ShooterGame"
 * Eliminating all enemies brings you to win scene (still empty), player eliminated or base eliminated brings to lose scene (also still empty)
 * Adjust AI sight and attack settings under AI gameobject of Enemy prefab
 * Enemy navigation is under EnemyParent prefab
+
+CH 3-4, 10: Under "Scenes/ShooterGame"
+* Same features as before, moved everything to terrain w/ textures
+* Moving water in the moat
