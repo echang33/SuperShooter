@@ -27,3 +27,6 @@ Chapter 7-9: Under "Scenes/ShooterGame"
 CH 3-4, 10: Under "Scenes/ShooterGame"
 * Same features as before, moved everything to terrain w/ textures
 * Moving water in the moat
+
+CH 11-13:
+* Sames features as before, followed textbook to add multiple particle effects, lighting, and post processing. 
