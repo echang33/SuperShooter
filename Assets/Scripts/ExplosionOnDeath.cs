@@ -12,6 +12,8 @@ public class ExplosionOnDeath : MonoBehaviour
     }
 
     void OnDeath(){
-        Instantiate(particlePrefab, transform.position, transform.rotation);
+        Vector3 rotation = transform.eulerAngles;
+        rotation.x = -90f;
+        Instantiate(particlePrefab, transform.position, Quaternion.Euler(rotation));
     }
 }

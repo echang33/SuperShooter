@@ -19,6 +19,7 @@ public class EnemyFSM : MonoBehaviour
     public GameObject shootPoint;
     public float lastShootTime;
     public float fireRate = 2f; // Shoots once every 2 seconds
+    public AudioSource shootingAudioSource;
 
     void Awake()
     {
@@ -69,6 +70,10 @@ public class EnemyFSM : MonoBehaviour
             {
                 lastShootTime = Time.time;
                 GameObject clone = Instantiate(bulletPrefab, shootPoint.transform.position, shootPoint.transform.rotation);
+                if (shootingAudioSource != null && shootingAudioSource.clip != null)
+                {
+                    shootingAudioSource.PlayOneShot(shootingAudioSource.clip);
+                }
             }
         }
         else

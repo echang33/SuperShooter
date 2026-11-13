@@ -8,15 +8,14 @@ public class PlayerShooting : MonoBehaviour
     public GameObject prefab;
     public GameObject shootPoint;
     public ParticleSystem muzzleEffect;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource shootingAudioSource;
 
     public void OnFire(){
         GameObject clone = Instantiate(prefab, shootPoint.transform.position, shootPoint.transform.rotation);
+        if (shootingAudioSource != null && shootingAudioSource.clip != null)
+        {
+            shootingAudioSource.PlayOneShot(shootingAudioSource.clip);
+        }
         muzzleEffect.Play();
     }
 
