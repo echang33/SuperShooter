@@ -7,7 +7,13 @@ public class Life : MonoBehaviour
 {
 
     public float amount;
+    public float MaxAmount { get; private set; }
     public UnityEvent onDeath;
+
+    void Awake()
+    {
+        MaxAmount = Mathf.Max(0f, amount);
+    }
     
     // Start is called before the first frame update
     void Start()

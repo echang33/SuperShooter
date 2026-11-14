@@ -33,6 +33,8 @@ public class EnemyShooting : MonoBehaviour
     // We moved the instantiation into its own method to keep things clean
     void Shoot()
     {
+        if (Time.timeScale <= 0f) return;
+
         GameObject clone = Instantiate(prefab, shootPoint.transform.position, shootPoint.transform.rotation);
     }
 }

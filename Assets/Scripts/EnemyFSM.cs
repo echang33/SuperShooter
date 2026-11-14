@@ -63,6 +63,8 @@ public class EnemyFSM : MonoBehaviour
 
     void Shoot()
     {
+        if (Time.timeScale <= 0f) return;
+
         if (bulletPrefab != null && shootPoint != null)
         {
             var timeSinceLastShot = Time.time - lastShootTime;

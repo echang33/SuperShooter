@@ -11,6 +11,7 @@ public class EnemyManager : MonoBehaviour
     public List<Enemy> enemies = new List<Enemy>();
 
     public UnityEvent OnEnemyDeath;
+    public UnityEvent onChanged = new UnityEvent();
 
     void Awake()
     {
@@ -24,6 +25,7 @@ public class EnemyManager : MonoBehaviour
     public void AddEnemy(Enemy enemy)
     {
         enemies.Add(enemy);
+        onChanged.Invoke();
         if (OnEnemyDeath != null)
         {
             OnEnemyDeath.Invoke();
@@ -33,6 +35,7 @@ public class EnemyManager : MonoBehaviour
     public void RemoveEnemy(Enemy enemy)
     {
         enemies.Remove(enemy);
+        onChanged.Invoke();
         if (OnEnemyDeath != null)
         {
             OnEnemyDeath.Invoke();

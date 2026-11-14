@@ -11,6 +11,7 @@ public class WaveManager : MonoBehaviour
     public List<WaveSpawner> waves = new List<WaveSpawner>();
 
     public UnityEvent onWaveComplete;
+    public UnityEvent onChanged = new UnityEvent();
 
 
     private void Awake()
@@ -28,6 +29,7 @@ public class WaveManager : MonoBehaviour
     public void AddWave(WaveSpawner wave)
     {
         waves.Add(wave);
+        onChanged.Invoke();
         if (onWaveComplete != null)
         {
             onWaveComplete.Invoke();
@@ -37,6 +39,7 @@ public class WaveManager : MonoBehaviour
     public void RemoveWave(WaveSpawner wave)
     {
         waves.Remove(wave);
+        onChanged.Invoke();
         if (onWaveComplete != null)
         {
             onWaveComplete.Invoke();

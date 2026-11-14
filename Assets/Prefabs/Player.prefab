@@ -861,6 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 246e8615d7bc9be4ba39409600121104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletsAmount: 30
   prefab: {fileID: 2514811580044329794, guid: 6c58321d374a38946955c33d164913ce, type: 3}
   shootPoint: {fileID: 8504680016493557496}
   muzzleEffect: {fileID: 0}
