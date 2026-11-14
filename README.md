@@ -30,3 +30,7 @@ CH 3-4, 10: Under "Scenes/ShooterGame"
 
 CH 11-13:
 * Sames features as before, followed textbook to add multiple particle effects, lighting, and post processing. 
+
+CH 14, 15, 17:
+* Same features as before, followed textbook to add audio, UI, basic animations
+* Added text to win/lose screens
